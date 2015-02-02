@@ -1,0 +1,59 @@
+{
+  "name": "node-mystique",
+  "title": "Mystique",
+  "version": "0.0.1",
+  "description": "Universal string case mutator",
+  "keywords": [
+    "case",
+    "camel",
+    "camelCase",
+    "pascal",
+    "PascalCase",
+    "snake",
+    "snake_case",
+    "hyphen",
+    "hyphen-case",
+    "sentence",
+    "Sentence case",
+    "title",
+    "Title Case",
+    "underscore",
+    "underscore_case",
+    "lisp",
+    "lisp-case",
+    "kebab",
+    "kebab-case",
+    "dromedary",
+    "DromedaryCase",
+    "constant",
+    "CONSTANT_CASE",
+    "spinal",
+    "spinal-case",
+    "train",
+    "Train-Case"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/handshake/node-mystique.git"
+  },
+  "bugs": {
+    "url": "https://github.com/handshake/node-mystique/issues"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/handshake/node-mystique/blob/master/LICENSE"
+    }
+  ],
+  "devDependencies": {
+    "chai": "1.10.x",
+    "grunt": "0.4.x",
+    "grunt-coffeelint": "0.0.x",
+    "grunt-mocha-test": "0.12.x"
+  },
+  "dependencies": {
+    "coffee-script": "1.8.x",
+    "underscore": "1.7.x"
+  },
+  "main": "index.js"
+}
