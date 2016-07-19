@@ -28,6 +28,21 @@ TEST_SUITES = [
             lowerHumanCase: "it shouldnt choke on abbreviations or initialisms like url"
             upperHumanCase: "It Shouldnt Choke On Abbreviations Or Initialisms Like URL"
             sentenceCase: "It shouldnt choke on abbreviations or initialisms like URL"
+    },
+    {
+        original: """it shouldn't choke on newlines
+            or "quoted strings" in the middle"""
+        expected:
+            lowerCamelCase: "itShouldntChokeOnNewlinesOrQuotedStringsInTheMiddle"
+            upperCamelCase: "ItShouldntChokeOnNewlinesOrQuotedStringsInTheMiddle"
+            lowerUnderscoreCase: "it_shouldnt_choke_on_newlines_or_quoted_strings_in_the_middle"
+            upperUnderscoreCase: "It_Shouldnt_Choke_On_Newlines_Or_Quoted_Strings_In_The_Middle"
+            constantCase: "IT_SHOULDNT_CHOKE_ON_NEWLINES_OR_QUOTED_STRINGS_IN_THE_MIDDLE"
+            lowerHyphenCase: "it-shouldnt-choke-on-newlines-or-quoted-strings-in-the-middle"
+            upperHyphenCase: "It-Shouldnt-Choke-On-Newlines-Or-Quoted-Strings-In-The-Middle"
+            lowerHumanCase: "it shouldnt choke on newlines or quoted strings in the middle"
+            upperHumanCase: "It Shouldnt Choke On Newlines Or Quoted Strings In The Middle"
+            sentenceCase: "It shouldnt choke on newlines or quoted strings in the middle"
     }
 ]
 

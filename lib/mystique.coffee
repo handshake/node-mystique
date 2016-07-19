@@ -38,13 +38,13 @@ capitalize = (word, normal, invert, invertFirst, invertAll) ->
 
 tokenize = (variable, opts) ->
     _.map( variable
-        .match(///^#{opts.leftBoundary}(.*)#{opts.rightBoundary}$///)[1]
+        .match(///^#{opts.leftBoundary}([\s\S]*)#{opts.rightBoundary}$///)[1]
         .split(opts.segmentDelimiter)
     , (segment) ->
         isAllCaps = segment.toUpperCase() is segment
         _.map(
             segment
-                .match(///^#{opts.segmentLeftBoundary}(.*)#{opts.segmentRightBoundary}$///)[1]
+                .match(///^#{opts.segmentLeftBoundary}([\s\S]*)#{opts.segmentRightBoundary}$///)[1]
                 .replace(NORMALIZE_INNER_WORD_PUNCTUATION, "")
                 .replace(NORMALIZE_WORD_BOUNDARIES, " ")
                 .match TOKENIZE
